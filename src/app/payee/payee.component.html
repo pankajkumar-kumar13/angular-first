@@ -1,1 +1,8 @@
 <h1>In payee index {{getName()}}</h1>
+<button 
+(click) = "clickButton()"> 
+please Click</button>
+<p>{{data}}</p>
+<input  type="text" (input)="typedText($event)">
+<p [innerText]="typeText"></p>
+
