@@ -4,5 +4,15 @@
 please Click</button>
 <p>{{data}}</p>
 <input  type="text" (input)="typedText($event)">
-<p [innerText]="typeText"></p>
+<p  
+[ngStyle]="{backgroundColor : getColor()}" >
+
+hello
+</p>
+
+<p  
+[ngClass]="{pColor : sFavorite}" >
+
+hello ngclass
+</p>
 

@@ -2,13 +2,18 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "[app-payee]",
-  templateUrl: "./payee.component.html"
+  templateUrl: "./payee.component.html",
+  styleUrls: [ './payee.component.css' ]
 })
 export class PayeeComponent {
-name : string = "Pankaj";
-data : string = "you not click buttom";
+name  = 'Pankaj';
+data = "you not click buttom";
+color = "green"
 typeText : string = " ";
-
+sFavorite = true;
+getColor(){
+  return this.color= Math.random()>0.5?'green':'blue';
+}
 
 
 getName(){
