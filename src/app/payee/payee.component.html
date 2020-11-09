@@ -10,9 +10,14 @@ please Click</button>
 hello
 </p>
 
-<p  
+<!-- <p  
 [ngClass]="{pColor : sFavorite}" >
 
 hello ngclass
+</p> -->
+<p  *ngFor= 'let payee of payees '
+[ngStyle]= "{backgroundColor : i > 5 ? 'blue' : 'red'}"
+[ngClass] =  "{pColor : i > 5,ptColor :i > 10}" >
+{{payee}}
 </p>
 

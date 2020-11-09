@@ -11,6 +11,7 @@ data = "you not click buttom";
 color = "green"
 typeText : string = " ";
 sFavorite = true;
+payees =[];
 getColor(){
   return this.color= Math.random()>0.5?'green':'blue';
 }
@@ -20,7 +21,7 @@ getName(){
   return this.name;
 }
 clickButton(){
-  this.data ="you have click buttom";
+  return this.payees.push(new Date());
 }
 typedText(event){
 this.typeText=event.target.value;
